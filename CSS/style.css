@@ -1,0 +1,189 @@
+body {
+    background-color: rgb(75, 75, 75);
+    color: #fff;
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Lato, Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+table {
+    border: 4px solid rgb(0, 0, 180);
+    background-color: blue;
+    margin: auto;
+}
+
+td {
+    width: 75px;
+    height: 75px;
+    border: 4px solid rgb(0, 0, 180);
+    border-radius: 50%;
+    background-color: rgb(75, 75, 75);
+    cursor: pointer;
+    box-shadow: 2px 2px cornflowerblue;
+}
+
+.obj, .obj1, .obj2 {
+    visibility: hidden;
+}
+
+.choicecolor {
+    text-align: center;
+    margin: 10px;
+}
+
+#currentPlayer {
+    margin: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.controls > .scores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.controls > .scores > div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.75em;
+    margin: 0.5em;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.25em;
+}
+
+.controls > .scores > div > span:first-child {
+    margin-bottom: 0.5em;   
+}
+
+.controls > .scores > div > span:last-child {
+    font-size: 1.5em;
+}
+
+.mydiv {
+    display: block ruby;
+}
+
+button {
+    display: block;
+    position: relative;
+    margin-top: 1em;
+    padding: 0.75em 1em;
+    outline: none;
+    border: none;
+    border-radius: 3em;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #7d5fff;
+    box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+ button:hover,
+ button:focus {
+    background-color: #886dff;
+}
+
+button:active {
+    background-color: #7158e2;
+    transform: translateY(2px);
+}
+
+#back {
+    padding: 0px 9px;
+    font-size: 38px;
+    margin-top: 24px;
+}
+
+#back:active {
+    transform: rotate(-360deg);
+}
+
+#game.won {
+    opacity: 0.2;
+}
+
+#grid > .win-display {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0.7em 1.2em;
+    color: black;
+    background-color: #fff200;
+    border-radius: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* white-space: nowrap; */
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition-property: opacity, transform;
+    transition-duration: 0.2s;
+    /* transition-delay: 0s;
+    transition-timing-function: linear; */
+}
+  
+#grid.won > .win-display {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    /* transition-delay: 0.1s;
+    transition-timing-function: cubic-bezier(0.175, 1.5, 0.32, 1.275); */
+}
+
+.controls > button#replay {
+    display: block;
+    position: relative;
+    margin-top: 1em;
+    padding: 0.75em 1em;
+  
+    outline: none;
+    border: none;
+    border-radius: 3em;
+  
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #7d5fff;
+    box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    margin: auto;
+    margin-top: 20px;
+    min-width: 330px;
+}
+  
+.controls > button#replay:hover,
+.controls > button#replay:focus {
+    background-color: #886dff;
+}
+  
+.controls > button#replay:active {
+    background-color: #7158e2;
+    transform: translateY(2px);
+}
+
+.divBtnBack {
+    position: relative;
+    left: 48%;
+}

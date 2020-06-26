@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="titre">Puissance 4</h1>
+    </header>
+    <div id="grid">
+        <div class="choicecolor">
+            <label for="gridX"><b>Cols :</b></label>
+            <select name="gridX" id="gridX">
+                <option value="7">7</option>
+                <option value="9">9</option>
+                <option value="5">5</option>
+            </select>
+            <select name="gridY" id="gridY">
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="4">4</option>
+            </select>
+            <label for="gridY"><b>: Row</b></label>
+        </div>
+        <div class="choicecolor">
+            <label for="color"><b>J1 : </b></label>
+            <select name="color" id="color">
+                <option value="" selected="selected">Select your color</option>
+                <option value="blue">blue</option>
+                <option value="green">green</option>
+                <option value="pink">pink</option>
+            </select>
+            <select name="color2" id="color2">
+                <option value="" selected="selected">Select your color</option>
+                <option value="yellow">yellow</option>
+                <option value="white">white</option>
+                <option value="lime">lime</option>
+            </select>
+            <label for="color2"><b>: J2</b></label>
+            
+            <div class="mydiv">
+                <div id="currentPlayer">Jouer</div>
+                <div class="divBtnBack">
+                    <button id="back">&olarr;</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game">
+
+        </div>
+        
+        <span class="win-display"></span>
+        
+        <div class="controls">
+            <div class="scores">
+                <div>
+                    <span id="j1"></span>
+                    <span id="playerOne">0</span>
+                </div>
+                <p>VS</p>
+                <div>
+                    <span id="j2"></span>
+                    <span id="playerTwo">0</span>
+                </div>
+            </div>
+            <button type="button" id="replay">Rejouer</button>
+        </div>
+    </div>
+        <!-- <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="ab">Subscription choice</h2>
+                <from methode="POST" action="index.php" id="myform">
+                    <div class="border">
+                        <input type="radio" id="huey" name="aboo" value="0"> blue<br>
+                        <input type="radio" id="huey" name="aboo" value="1"> pink<br>
+                        <input type="radio" id="huey" name="aboo" value="2"> red<br>
+                        <input type="radio" id="huey" name="aboo" value="3"> yellow<br>
+                        <input type="radio" id="huey" name="aboo" value="4"> green<br>
+                    </div>
+                    <input type="submit" id="mybtn" class="btn btn-info" data-dismiss="modal">
+                </form>
+            </div>
+        </div>
+    </div> -->
+</body>
+<script src="JS/main.js"></script>
+</html>
