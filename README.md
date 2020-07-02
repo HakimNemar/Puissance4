@@ -1,5 +1,5 @@
 # Puissance4
 
 • Javascript\
-• Librairie JQuery\
+• Librairie jQuery\
 • Algorithmie
