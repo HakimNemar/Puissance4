@@ -1,5 +1,7 @@
 # Puissance4
 
 • Javascript\
-• Librairie JQuery\
+• Librairie jQuery\
 • Algorithmie
+
+## [Live Demo](https://mypuissance4.herokuapp.com/)
