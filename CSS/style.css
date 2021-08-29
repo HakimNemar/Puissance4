@@ -2,8 +2,8 @@ body {
     background-color: rgb(75, 75, 75);
     color: #fff;
     font-size: 24px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Lato, Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Lato, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
 }
 
 .disabled {
@@ -32,7 +32,9 @@ td {
     box-shadow: 2px 2px cornflowerblue;
 }
 
-.obj, .obj1, .obj2 {
+.obj,
+.obj1,
+.obj2 {
     visibility: hidden;
 }
 
@@ -72,7 +74,7 @@ td {
 }
 
 .controls > .scores > div > span:first-child {
-    margin-bottom: 0.5em;   
+    margin-bottom: 0.5em;
 }
 
 .controls > .scores > div > span:last-child {
@@ -86,22 +88,16 @@ td {
 button {
     display: block;
     position: relative;
-    margin-top: 1em;
-    padding: 0.75em 1em;
-    outline: none;
     border: none;
-    border-radius: 3em;
-    font-size: 1em;
-    font-weight: bold;
+    border-radius: 50%;
     color: white;
     background-color: #7d5fff;
-    box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.25);
     cursor: pointer;
     transition: background-color 0.2s, transform 0.2s;
 }
 
- button:hover,
- button:focus {
+button:hover,
+button:focus {
     background-color: #886dff;
 }
 
@@ -113,7 +109,9 @@ button:active {
 #back {
     padding: 0px 9px;
     font-size: 38px;
-    margin-top: 24px;
+    margin: auto;
+    width: 60px;
+    height: 60px;
 }
 
 #back:active {
@@ -143,7 +141,7 @@ button:active {
     /* transition-delay: 0s;
     transition-timing-function: linear; */
 }
-  
+
 #grid.won > .win-display {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
@@ -156,11 +154,11 @@ button:active {
     position: relative;
     margin-top: 1em;
     padding: 0.75em 1em;
-  
+
     outline: none;
     border: none;
     border-radius: 3em;
-  
+
     font-size: 1em;
     font-weight: bold;
     color: white;
@@ -172,12 +170,12 @@ button:active {
     margin-top: 20px;
     min-width: 330px;
 }
-  
+
 .controls > button#replay:hover,
 .controls > button#replay:focus {
     background-color: #886dff;
 }
-  
+
 .controls > button#replay:active {
     background-color: #7158e2;
     transform: translateY(2px);
